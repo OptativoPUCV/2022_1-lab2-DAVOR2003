@@ -109,3 +109,13 @@ Thu 17 Mar 2022 02:42:47 PM UTC:
  tests:  1|5
 total_score: 10/70
 7cd87a1
+Thu 17 Mar 2022 02:47:32 PM UTC: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:40:17: error: expected ‘)’ before ‘and’
+   40 |   if(list!=NULL and list->head!=NULL){
+      |     ~           ^~~
+Compilation failed
+d653684
