@@ -131,3 +131,18 @@ Thu 17 Mar 2022 02:56:23 PM UTC:
  tests:  2|5
 total_score: 15/70
 4f8fd2b
+Thu 17 Mar 2022 02:58:39 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:48:13: error: ‘List’ {aka ‘struct List’} has no member named ‘currentnext’; did you mean ‘current’?
+   48 |   if (list->currentnext !=NULL){
+      |             ^~~~~~~~~~~
+      |             current
+list.c:49:18: error: ‘List’ {aka ‘struct List’} has no member named ‘currentnext’; did you mean ‘current’?
+   49 |     return list->currentnext;
+      |                  ^~~~~~~~~~~
+      |                  current
+Compilation failed
+c202e8c
