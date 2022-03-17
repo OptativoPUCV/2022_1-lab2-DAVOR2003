@@ -34,3 +34,30 @@ list.c:36:10: error: returning ‘int *’ from a function with incompatible ret
 cc1: all warnings being treated as errors
 Compilation failed
 08a9abe
+Thu 17 Mar 2022 02:38:23 PM UTC: 
+ list.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:32:3: error: unknown type name ‘list’; did you mean ‘List’?
+   32 |   list* list= (list*) malloc (sizeof(list));
+      |   ^~~~
+      |   List
+list.c:32:21: error: expected expression before ‘)’ token
+   32 |   list* list= (list*) malloc (sizeof(list));
+      |                     ^
+list.c:33:7: error: request for member ‘head’ in something not a structure or union
+   33 |   list->head=NULL;
+      |       ^~
+list.c:34:7: error: request for member ‘tail’ in something not a structure or union
+   34 |   list->tail=NULL;
+      |       ^~
+list.c:35:7: error: request for member ‘current’ in something not a structure or union
+   35 |   list->current=NULL;
+      |       ^~
+list.c:36:10: error: returning ‘int *’ from a function with incompatible return type ‘List *’ {aka ‘struct List *’} [-Werror=incompatible-pointer-types]
+   36 |   return list;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c0c5907
