@@ -103,3 +103,9 @@ list.c:40:9: error: ‘List’ {aka ‘struct List’} has no member named ‘cu
       |         current
 Compilation failed
 d0d07b1
+Thu 17 Mar 2022 02:42:47 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+7cd87a1
