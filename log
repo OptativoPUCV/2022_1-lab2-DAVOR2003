@@ -216,3 +216,14 @@ list.c:77:3: error: ‘pun’ undeclared (first use in this function)
       |   ^~~
 Compilation failed
 8025c66
+Fri 18 Mar 2022 02:50:14 PM UTC: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:72:7: error: ‘head’ undeclared (first use in this function)
+   72 |   if( head != NULL){
+      |       ^~~~
+list.c:72:7: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+beea743
