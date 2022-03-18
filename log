@@ -233,3 +233,9 @@ Fri 18 Mar 2022 02:50:31 PM UTC:
  tests:  9|3
 total_score: 35/70
 4af3542
+Fri 18 Mar 2022 02:53:28 PM UTC: 
+ list.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+ tests:  10|2
+total_score: 45/70
+d29d7f4
