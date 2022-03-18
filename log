@@ -191,3 +191,14 @@ list.c:73:13: error: ‘head’ undeclared (first use in this function)
 list.c:73:13: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 2756611
+Fri 18 Mar 2022 02:46:15 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:72:6: error: ‘head’ undeclared (first use in this function)
+   72 |   if(head!=NULL){
+      |      ^~~~
+list.c:72:6: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+5dff276

@@ -69,11 +69,12 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
-  Node* pun=createNode(data);
-  pun->next=head;
-  head->prev=pun;
-  pun=head;
-  
+  if(head!=NULL){
+    Node* pun=createNode(data);
+    pun->next=head;
+    head->prev=pun;
+    pun= head;
+  }
 }
 
 void pushBack(List * list, void * data) {
