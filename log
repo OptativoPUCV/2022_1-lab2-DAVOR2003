@@ -180,3 +180,14 @@ Thu 17 Mar 2022 03:12:07 PM UTC:
  tests:  9|3
 total_score: 35/70
 2b98750
+Fri 18 Mar 2022 02:44:44 PM UTC: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:73:13: error: ‘head’ undeclared (first use in this function)
+   73 |   pun->next=head;
+      |             ^~~~
+list.c:73:13: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2756611
