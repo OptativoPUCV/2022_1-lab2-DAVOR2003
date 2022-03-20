@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -119,7 +120,7 @@ void * popCurrent(List * list) {
         }
     }
     if(list->current->next !=NULL){
-      list->current->prev = list->current->prev;
+      list->current->prev = list->current->next;
     }else{
       list->tail = list->current->prev;
     }
